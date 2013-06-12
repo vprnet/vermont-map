@@ -1,5 +1,10 @@
 #Vermont Map by Town
 
+A choropleth of the state of Vermont with each individual town represented by its own
+polygon. 
+[Demo](http://bl.ocks.org/mattparrilla/5724610)
+
+
 ##vermont.json
 A TopoJSON file of all Vermont towns (by name and a county ID) and Lake Champlain.
 
