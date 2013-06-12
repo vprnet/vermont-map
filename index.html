@@ -26,7 +26,7 @@
     var path = d3.geo.path()
         .projection(projection);
 
-    d3.json("master/vermont.json", function(error, vt) {
+    d3.json("vermont.json", function(error, vt) {
 
         svg.append("path")
             .datum(topojson.feature(vt, vt.objects.vt_towns))
@@ -70,6 +70,8 @@
         svg.append("path")
             .datum(topojson.feature(vt, vt.objects.lake))
             .attr("d", path)
+            .style("stroke", "#89b6ef")
+            .style("stroke-width", "1px")
             .style("fill", "#7aadec");
 
         /*
